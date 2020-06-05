@@ -3,7 +3,8 @@ package com.github.tulesaza.redsoftassignment.service;
 import com.github.tulesaza.redsoftassignment.exception.SelectorException;
 import com.github.tulesaza.redsoftassignment.model.dto.Country;
 import com.github.tulesaza.redsoftassignment.model.dto.ExtremeVatRateCountries;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Comparator;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.stream.Collectors;
 
 public class ExtremeVatRateCountriesSelector {
 
-    private final static Logger LOG = Logger.getLogger(ExtremeVatRateCountriesSelector.class);
+    private final static Logger LOG = LogManager.getLogger(ExtremeVatRateCountriesSelector.class);
 
     public ExtremeVatRateCountries select(Map<String, Country> data) {
 

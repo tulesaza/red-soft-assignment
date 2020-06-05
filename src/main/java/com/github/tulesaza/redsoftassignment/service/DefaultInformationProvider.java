@@ -4,14 +4,15 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.github.tulesaza.redsoftassignment.exception.DownloadException;
 import com.github.tulesaza.redsoftassignment.model.dto.Country;
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.net.URL;
 import java.util.Map;
 
 public class DefaultInformationProvider implements InformationProvider {
 
-    private final static Logger LOG = Logger.getLogger(InformationProvider.class);
+    private final static Logger LOG = LogManager.getLogger(InformationProvider.class);
 
     private final ObjectMapper mapper = new ObjectMapper();
 
