@@ -1,0 +1,21 @@
+{
+  "AT": {
+    "country": "Austria",
+    "standard_rate": 20,
+    "reduced_rate": 10,
+    "reduced_rate_alt": 13,
+    "parking_rate": 12
+  },
+  "BE": {
+    "country": "Belgium",
+    "standard_rate": 21,
+    "reduced_rate": 12,
+    "reduced_rate_alt": 6,
+    "parking_rate": 12
+  },
+  "BG": {
+    "country": "Bulgaria",
+    "standard_rate": 20,
+    "reduced_rate": 9
+  }
+}
